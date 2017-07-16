@@ -13,6 +13,7 @@
 - name: add homebrew tap askroom/cask
   homebrew_tap:
     tap: "caskroom/cask"
+    state: present
 
 - name: add homebrew tap for php
   homebrew_tap:
