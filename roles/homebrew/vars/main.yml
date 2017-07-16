@@ -1,0 +1,24 @@
+homebrew_apps:
+  - curl
+  - git
+  - go
+  - php71
+  - tree
+  - vim
+  - wget
+
+homebrew_cask_apps:
+  - docker
+  - firefox
+  - google-backup-and-sync
+  - google-chrome
+  - keepassx
+  - openemu
+  - robo-3t
+  - sequel-pro
+  - skype
+  - slack
+  - spotify
+  - the-unarchiver
+  - tunnelblick
+  - virtualbox

@@ -1,0 +1,32 @@
+---
+# see https://brew.sh/
+- name: install homebrew
+  shell: 'yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+  args:
+    creates: /usr/local/bin/brew
+
+- name: ensure homebrew is updated
+  homebrew:
+    state: latest
+    update_homebrew: yes
+
+- name: add homebrew tap askroom/cask
+  homebrew_tap:
+    tap: "caskroom/cask"
+
+- name: add homebrew tap for php
+  homebrew_tap:
+    name: homebrew/dupes,homebrew/versions,homebrew/homebrew-php
+    state: present
+
+- name: install homebrew apps
+  homebrew:
+    name: "{{item}}"
+    state: latest
+  with_items: "{{homebrew_apps}}"
+
+- name: install homebrew cask apps
+  homebrew_cask:
+    name: "{{item}}"
+    state: installed
+  with_items: "{{homebrew_cask_apps}}"

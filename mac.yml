@@ -1,0 +1,5 @@
+---
+- name: Mac setup play
+  hosts: mac
+  roles:
+    - homebrew
