@@ -1,5 +1,7 @@
 ---
 - name: Mac setup play
   hosts: mac
+  gather_facts: no
   roles:
     - homebrew
+    - user

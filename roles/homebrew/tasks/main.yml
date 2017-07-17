@@ -4,30 +4,36 @@
   shell: 'yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
   args:
     creates: /usr/local/bin/brew
+  tags: homebrew
 
 - name: ensure homebrew is updated
   homebrew:
     state: latest
     update_homebrew: yes
+  tags: homebrew
 
 - name: add homebrew tap askroom/cask
   homebrew_tap:
     tap: "caskroom/cask"
     state: present
+  tags: homebrew
 
 - name: add homebrew tap for php
   homebrew_tap:
     name: homebrew/dupes,homebrew/versions,homebrew/homebrew-php
     state: present
+  tags: homebrew
 
 - name: install homebrew apps
   homebrew:
     name: "{{item}}"
     state: latest
   with_items: "{{homebrew_apps}}"
+  tags: homebrew
 
 - name: install homebrew cask apps
   homebrew_cask:
     name: "{{item}}"
     state: installed
   with_items: "{{homebrew_cask_apps}}"
+  tags: homebrew

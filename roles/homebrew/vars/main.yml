@@ -19,6 +19,7 @@ homebrew_cask_apps:
   - skype
   - slack
   - spotify
+  - sublime-text
   - the-unarchiver
   - tunnelblick
   - virtualbox
