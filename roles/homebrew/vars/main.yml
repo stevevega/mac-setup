@@ -12,6 +12,7 @@ homebrew_cask_apps:
   - firefox
   - google-backup-and-sync
   - google-chrome
+  - jet
   - keepassx
   - openemu
   - robo-3t
