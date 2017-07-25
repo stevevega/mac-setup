@@ -26,14 +26,14 @@
 
 - name: install homebrew apps
   homebrew:
-    name: "{{item}}"
+    name: "{{ item }}"
     state: latest
-  with_items: "{{homebrew_apps}}"
+  with_items: "{{ homebrew_apps }}"
   tags: homebrew
 
 - name: install homebrew cask apps
   homebrew_cask:
-    name: "{{item}}"
+    name: "{{ item }}"
     state: installed
-  with_items: "{{homebrew_cask_apps}}"
+  with_items: "{{ homebrew_cask_apps }}"
   tags: homebrew

@@ -1,0 +1,27 @@
+---
+- name: remove items from dock
+  shell: dockutil --remove '{{ item }}'
+  ignore_errors: true
+  with_items: "{{ dock_to_remove }}"
+  register: dock_removed
+  changed_when: "'was not found' not in dock_removed.stdout"
+  tags: dock
+
+- name: get the dock current items
+  shell: /usr/local/bin/dockutil --list
+  register: dock_list
+  changed_when: false
+  tags: dock
+
+- name: add items to dock
+  shell: dockutil --add '{{ item.path }}'
+  with_items: "{{ dock_to_add }}"
+  when: "item.name not in dock_list.stdout"
+  register: dock_added
+  tags: dock
+ 
+- name: set items order
+  shell: dockutil --move '{{ item.name }}' --position {{ item.pos }}
+  with_items: "{{ dock_to_add }}"
+  when: dock_added.changed
+  tags: dock

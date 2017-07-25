@@ -1,0 +1,9 @@
+- pip:
+    name: passlib
+
+- name: install pip apps
+  pip:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ pip_apps }}"
+  tags: pip

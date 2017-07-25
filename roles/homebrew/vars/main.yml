@@ -1,5 +1,6 @@
 homebrew_apps:
   - curl
+  - dockutil
   - git
   - go
   - php71
@@ -12,6 +13,7 @@ homebrew_cask_apps:
   - firefox
   - google-backup-and-sync
   - google-chrome
+  - google-hangouts
   - jet
   - keepassx
   - openemu
