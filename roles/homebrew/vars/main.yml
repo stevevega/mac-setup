@@ -7,6 +7,8 @@ homebrew_apps:
   - tree
   - vim
   - wget
+  - zsh
+  - zsh-syntax-highlighting
 
 homebrew_cask_apps:
   - docker
@@ -14,6 +16,7 @@ homebrew_cask_apps:
   - google-backup-and-sync
   - google-chrome
   - google-hangouts
+  - iterm2
   - jet
   - keepassx
   - openemu
