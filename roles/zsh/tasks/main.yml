@@ -30,16 +30,14 @@
     line: 'source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
   tags: zsh
 
-- name: 'set backward-word key bind'
-  lineinfile:
-    path: /Users/{{ username }}/.zshrc
-    regexp: '^bindkey "\[D"'
-    line: 'bindkey "[D" backward-word'
+- name: "set the iterm profile"
+  copy:
+    src: roles/zsh/files/com.googlecode.iterm2.plist
+    dest: /Users/{{ username }}/Library/Preferences/com.googlecode.iterm2.plist
+  register: iterm_profile
   tags: zsh
 
-- name: 'set forward-word key bind'
-  lineinfile:
-    path: /Users/{{ username }}/.zshrc
-    regexp: '^bindkey "\[C"'
-    line: 'bindkey "[C" forward-word'
+- name: "reload iterm profile"
+  shell: defaults read com.googlecode.iterm2
+  when: iterm_profile.changed
   tags: zsh
