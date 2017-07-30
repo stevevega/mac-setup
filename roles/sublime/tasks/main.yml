@@ -11,7 +11,7 @@
   tags: sublime
 
 - name: remove the default sublime configuration folder
-  file: 
+  file:
     path: "/Users/{{ username }}/Library/Application Support/Sublime Text 3/Packages/User"
     state: absent
   when: sublime_config.stat.isdir is defined and sublime_config.stat.isdir
@@ -19,7 +19,7 @@
 
 - name: copy our custom sublime configuration
   file:
-    src: roles/sublime/files/User
+    src: "{{ role_path }}/files/User"
     dest: "/Users/{{ username }}/Library/Application Support/Sublime Text 3/Packages/User"
     state: link
     force: yes
