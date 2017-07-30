@@ -1,0 +1,26 @@
+- name: download package control
+  get_url:
+    url: https://packagecontrol.io/Package%20Control.sublime-package
+    dest: "/Users/{{ username }}/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package"
+  tags: sublime
+
+- name: check stat of default sublime configuration folder
+  stat:
+    path: "/Users/{{ username }}/Library/Application Support/Sublime Text 3/Packages/User"
+  register: sublime_config
+  tags: sublime
+
+- name: remove the default sublime configuration folder
+  file: 
+    path: "/Users/{{ username }}/Library/Application Support/Sublime Text 3/Packages/User"
+    state: absent
+  when: sublime_config.stat.isdir is defined and sublime_config.stat.isdir
+  tags: sublime
+
+- name: copy our custom sublime configuration
+  file:
+    src: roles/sublime/files/User
+    dest: "/Users/{{ username }}/Library/Application Support/Sublime Text 3/Packages/User"
+    state: link
+    force: yes
+  tags: sublime

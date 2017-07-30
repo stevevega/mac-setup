@@ -1,6 +1,3 @@
-- pip:
-    name: passlib
-
 - name: install pip apps
   pip:
     name: "{{ item }}"
