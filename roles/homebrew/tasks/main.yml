@@ -14,13 +14,19 @@
 
 - name: add homebrew tap askroom/cask
   homebrew_tap:
-    tap: "caskroom/cask"
+    tap: caskroom/cask
     state: present
   tags: homebrew
 
 - name: add homebrew tap for php
   homebrew_tap:
     name: homebrew/dupes,homebrew/versions,homebrew/homebrew-php
+    state: present
+  tags: homebrew
+
+- name: add homebrew tap caskroom/fonts
+  homebrew_tap:
+    name: caskroom/fonts
     state: present
   tags: homebrew
 
