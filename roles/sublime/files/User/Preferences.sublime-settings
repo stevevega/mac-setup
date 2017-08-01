@@ -20,6 +20,11 @@
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
 	"overlay_scroll_bars": "enabled",
+	"rulers":
+    [
+        100,
+        120
+    ],
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"trim_trailing_white_space_on_save": true
 }
