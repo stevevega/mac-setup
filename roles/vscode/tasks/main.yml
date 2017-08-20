@@ -18,3 +18,24 @@
     state: link
     force: yes
   tags: vscode
+
+- name: check stat of default vscode extension folder
+  stat:
+    path: "/Users/{{ username }}/.vscode/extensions"
+  register: vscode_extensions
+  tags: vscode
+
+- name: remove the default vscode extension folder
+  file:
+    path: "/Users/{{ username }}/.vscode/extensions"
+    state: absent
+  when: vscode_extensions.stat.isdir is defined and vscode_extensions.stat.isdir
+  tags: vscode
+
+- name: copy our custom vscode extension
+  file:
+    src: "{{ role_path }}/files/User"
+    dest: "/Users/{{ username }}/.vscode/extensions"
+    state: link
+    force: yes
+  tags: vscode

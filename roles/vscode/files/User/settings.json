@@ -17,5 +17,6 @@
         "progressBar.background": "#00BCD4",
         "pickerGroup.foreground": "#00BCD4"
     },
-    "workbench.iconTheme": "eq-material-theme-icons"
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "window.zoomLevel": 0
 }
