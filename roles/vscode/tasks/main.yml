@@ -1,0 +1,20 @@
+- name: check stat of default vscode configuration folder
+  stat:
+    path: "/Users/{{ username }}/Library/Application Support/Code/User"
+  register: vscode_config
+  tags: vscode
+
+- name: remove the default vscode configuration folder
+  file:
+    path: "/Users/{{ username }}/Library/Application Support/Code/User"
+    state: absent
+  when: vscode_config.stat.isdir is defined and vscode_config.stat.isdir
+  tags: vscode
+
+- name: copy our custom vscode configuration
+  file:
+    src: "{{ role_path }}/files/User"
+    dest: "/Users/{{ username }}/Library/Application Support/Code/User"
+    state: link
+    force: yes
+  tags: vscode

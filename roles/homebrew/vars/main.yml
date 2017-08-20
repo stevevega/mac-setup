@@ -30,3 +30,4 @@ homebrew_cask_apps:
   - the-unarchiver
   - tunnelblick
   - virtualbox
+  - visual-studio-code

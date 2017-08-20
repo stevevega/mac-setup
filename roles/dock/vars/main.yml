@@ -15,23 +15,26 @@ dock_to_remove:
   - System Preferences
   - Calendar
   - Terminal
- 
+
 dock_to_add:
   - name: iTerm
     path: /Applications/iTerm.app
     pos: 1
+  - name: Visual Studio Code
+    path: /Applications/Visual Studio Code.app
+    pos: 2
   - name: Google Chrome
     path: "/Applications/Google Chrome.app"
-    pos: 2
+    pos: 3
   - name: Slack
     path: /Applications/Slack.app
-    pos: 3
+    pos: 4
   - name: Sequel Pro
     path: /Applications/Sequel Pro.app
-    pos: 4
+    pos: 5
   - name: KeePassX
     path: /Applications/KeePassX.app
-    pos: 5
+    pos: 6
   - name: Spotify
     path: /Applications/Spotify.app
-    pos: 6
+    pos: 7
