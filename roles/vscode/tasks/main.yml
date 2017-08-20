@@ -34,7 +34,7 @@
 
 - name: copy our custom vscode extension
   file:
-    src: "{{ role_path }}/files/User"
+    src: "{{ role_path }}/files/extensions"
     dest: "/Users/{{ username }}/.vscode/extensions"
     state: link
     force: yes
