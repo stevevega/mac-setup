@@ -1,3 +1,17 @@
+- name: "make sure the python 2.7 folder exists (needed for passlib)."
+  file:
+    path: /Users/{{ username }}/Library/Python/2.7/lib/python/site-packages
+    state: directory
+  become: yes
+  tags: user
+
+- name: "add the pyhton homebrew setup file (needed for passlib)."
+  copy:
+    src: "{{ role_path }}/files/homebrew.pth"
+    dest: "/Users/{{ username }}/Library/Python/2.7/lib/python/site-packages/homebrew.pth"
+  become: yes
+  tags: user
+
 - name: "generate id_rsa key"
   user:
     name: "{{ username }}"
