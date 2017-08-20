@@ -1,0 +1,21 @@
+{
+    "editor.fontFamily": "Roboto Mono",
+    "editor.lineHeight": 24,
+    "materialTheme.cache.workbench.settings": {
+        "themeColours": "Default",
+        "accent": "Cyan",
+        "accentPrevious": "Purple"
+    },
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#00BCD4",
+        "list.activeSelectionForeground": "#00BCD4",
+        "list.inactiveSelectionForeground": "#00BCD4",
+        "list.highlightForeground": "#00BCD4",
+        "scrollbarSlider.activeBackground": "#00BCD450",
+        "editorSuggestWidget.highlightForeground": "#00BCD4",
+        "textLink.foreground": "#00BCD4",
+        "progressBar.background": "#00BCD4",
+        "pickerGroup.foreground": "#00BCD4"
+    },
+    "workbench.iconTheme": "eq-material-theme-icons"
+}
