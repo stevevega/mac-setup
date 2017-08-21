@@ -7,3 +7,5 @@ roles/sublime/files/User/Package Control.ca-list
 roles/sublime/files/User/Package Control.cache/
 roles/sublime/files/User/Package Control.last-run
 roles/sublime/files/User/Package Control.system-ca-bundle
+
+roles/vscode/files/User/workspaceStorage/

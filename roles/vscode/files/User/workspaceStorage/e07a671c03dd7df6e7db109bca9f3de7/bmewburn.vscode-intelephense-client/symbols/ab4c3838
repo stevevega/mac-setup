@@ -1,1 +1,0 @@
-{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/phpunit/phpunit/src/Exception.php","root":{"kind":0,"name":"","children":[{"kind":2,"name":"PHPUnit_Exception","location":[13,0,15,1],"description":"Marker interface for PHPUnit exceptions."}]}}

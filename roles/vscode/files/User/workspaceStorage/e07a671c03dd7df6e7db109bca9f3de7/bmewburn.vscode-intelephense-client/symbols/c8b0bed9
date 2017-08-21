@@ -1,1 +1,0 @@
-{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/phpunit/phpunit/tests/_files/Inheritance/InheritanceA.php","root":{"kind":0,"name":"","children":[{"kind":1,"name":"InheritanceA","location":[4,0,6,1],"associated":[{"kind":1,"name":"InheritanceB"}]}]}}

@@ -1,1 +1,0 @@
-{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/phpunit/phpunit/tests/Regression/Trac/783/ChildSuite.php","root":{"kind":0,"name":"","children":[{"kind":1,"name":"ChildSuite","location":[4,0,14,1],"children":[{"kind":32,"name":"suite","modifiers":33,"location":[6,4,13,5],"scope":"ChildSuite"}]}]}}

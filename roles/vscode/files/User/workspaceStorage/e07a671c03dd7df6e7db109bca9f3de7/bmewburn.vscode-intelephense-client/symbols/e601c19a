@@ -1,1 +1,0 @@
-{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/phpunit/phpunit/src/Framework/SkippedTest.php","root":{"kind":0,"name":"","children":[{"kind":2,"name":"PHPUnit_Framework_SkippedTest","location":[13,0,15,1],"description":"A marker interface for marking a unit test as being skipped."}]}}
