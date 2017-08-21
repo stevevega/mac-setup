@@ -1,6 +1,7 @@
 {
     "editor.fontFamily": "Roboto Mono",
     "editor.lineHeight": 24,
+    "go.lintTool": "gometalinter",
     "materialTheme.cache.workbench.settings": {
         "themeColours": "Default",
         "accent": "Cyan",
