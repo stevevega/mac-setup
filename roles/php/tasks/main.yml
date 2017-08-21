@@ -1,0 +1,5 @@
+- name: "add the php custom code standard."
+  copy:
+    src: "{{ role_path }}/files/.php_cs"
+    dest: "/Users/{{ username }}/.php_cs"
+  tags: php

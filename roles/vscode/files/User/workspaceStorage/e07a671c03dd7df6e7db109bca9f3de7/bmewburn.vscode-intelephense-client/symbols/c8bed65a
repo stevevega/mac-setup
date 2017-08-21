@@ -1,0 +1,1 @@
+{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/phpunit/phpunit/tests/_files/Inheritance/InheritanceB.php","root":{"kind":0,"name":"","children":[{"kind":1,"name":"InheritanceB","location":[2,0,7,1],"associated":[{"kind":1,"name":"PHPUnit_Framework_TestCase"}],"children":[{"kind":32,"name":"testSomething","modifiers":1,"location":[4,4,6,5],"scope":"InheritanceB"}]}]}}

@@ -1,0 +1,1 @@
+{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/phpunit/phpunit/tests/_files/FatalTest.php","root":{"kind":0,"name":"","children":[{"kind":1,"name":"FatalTest","location":[2,0,12,1],"associated":[{"kind":1,"name":"PHPUnit_Framework_TestCase"}],"children":[{"kind":32,"name":"testFatalError","modifiers":1,"location":[4,4,11,5],"scope":"FatalTest"}]}]}}

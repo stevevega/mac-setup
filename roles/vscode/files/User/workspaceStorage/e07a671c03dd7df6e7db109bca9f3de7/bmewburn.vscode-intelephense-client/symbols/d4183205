@@ -1,0 +1,1 @@
+{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/intercom/intercom-php/tests/bootstrap.php","root":{"kind":0,"name":"","children":[{"kind":1,"name":"GuzzleTestCase","modifiers":4096,"location":[2,4,2,31],"associated":[{"kind":1,"name":"Guzzle\\Tests\\GuzzleTestCase"}]},{"kind":256,"name":"$mock_basepath","location":[7,0,7,14]}]}}

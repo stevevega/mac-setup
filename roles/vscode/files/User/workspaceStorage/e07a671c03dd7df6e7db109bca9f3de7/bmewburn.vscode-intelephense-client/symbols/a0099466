@@ -1,0 +1,1 @@
+{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/phpunit/phpunit/tests/Regression/Trac/783/TwoTest.php","root":{"kind":0,"name":"","children":[{"kind":1,"name":"TwoTest","location":[4,0,9,1],"associated":[{"kind":1,"name":"PHPUnit_Framework_TestCase"}],"children":[{"kind":32,"name":"testSomething","modifiers":1,"location":[6,4,8,5],"scope":"TwoTest"}]}]}}

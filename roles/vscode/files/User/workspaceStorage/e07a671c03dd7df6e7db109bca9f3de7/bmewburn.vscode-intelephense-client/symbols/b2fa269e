@@ -1,0 +1,1 @@
+{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/stripe/stripe-php/lib/AlipayAccount.php","root":{"kind":0,"name":"","children":[{"kind":512,"name":"Stripe","location":[2,0,2,17]},{"kind":1,"name":"Stripe\\AlipayAccount","location":[9,0,12,1],"associated":[{"kind":1,"name":"Stripe\\ExternalAccount"}],"description":"Class AlipayAccount"}]}}

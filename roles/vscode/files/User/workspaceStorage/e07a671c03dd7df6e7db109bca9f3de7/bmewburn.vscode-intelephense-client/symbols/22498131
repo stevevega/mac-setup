@@ -1,0 +1,1 @@
+{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/phpunit/phpunit/tests/_files/AbstractTest.php","root":{"kind":0,"name":"","children":[{"kind":1,"name":"AbstractTest","modifiers":16,"location":[1,0,6,1],"associated":[{"kind":1,"name":"PHPUnit_Framework_TestCase"}],"children":[{"kind":32,"name":"testOne","modifiers":1,"location":[3,4,5,5],"scope":"AbstractTest"}]}]}}

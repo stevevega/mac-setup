@@ -7,6 +7,9 @@
         "accent": "Cyan",
         "accentPrevious": "Purple"
     },
+    "php.suggest.basic": false,
+    "php-cs-fixer.config": "/Users/vega/.php_cs",
+    "php-cs-fixer.onsave": true,
     "workbench.colorCustomizations": {
         "activityBarBadge.background": "#00BCD4",
         "list.activeSelectionForeground": "#00BCD4",

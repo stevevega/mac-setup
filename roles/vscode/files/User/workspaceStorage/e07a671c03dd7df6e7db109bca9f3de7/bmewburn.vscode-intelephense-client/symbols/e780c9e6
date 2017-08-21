@@ -1,0 +1,1 @@
+{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/phpunit/phpunit/tests/_files/RequirementsClassDocBlockTest.php","root":{"kind":0,"name":"","children":[{"kind":1,"name":"RequirementsClassDocBlockTest","location":[9,0,21,1],"children":[{"kind":32,"name":"testMethod","modifiers":1,"location":[18,4,20,5],"scope":"RequirementsClassDocBlockTest"}]}]}}

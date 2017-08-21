@@ -1,0 +1,1 @@
+{"uri":"file:///Users/vega/Code/huli/manager-web/src/vendor/phpunit/phpunit-mock-objects/tests/_fixture/Bar.php","root":{"kind":0,"name":"","children":[{"kind":1,"name":"Bar","location":[1,0,7,1],"children":[{"kind":32,"name":"doSomethingElse","modifiers":1,"location":[3,4,6,5],"scope":"Bar"}]}]}}

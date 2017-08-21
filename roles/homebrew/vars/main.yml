@@ -4,6 +4,7 @@ homebrew_apps:
   - git
   - go
   - php71
+  - php-cs-fixer
   - tree
   - vim
   - wget
