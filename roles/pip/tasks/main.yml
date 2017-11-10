@@ -2,5 +2,6 @@
   pip:
     name: "{{ item }}"
     state: latest
+  become: yes
   with_items: "{{ pip_apps }}"
   tags: pip

@@ -8,6 +8,7 @@ homebrew_apps:
   - tree
   - vim
   - wget
+  - z
   - zsh
   - zsh-syntax-highlighting
 
@@ -22,6 +23,7 @@ homebrew_cask_apps:
   - jet
   - keepassx
   - openemu
+  - postman
   - robo-3t
   - sequel-pro
   - skype

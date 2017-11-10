@@ -1,7 +1,10 @@
 {
     "editor.fontFamily": "Roboto Mono",
     "editor.lineHeight": 24,
+    "editor.rulers": [80,100],
+    "files.trimTrailingWhitespace": true,
     "go.lintTool": "gometalinter",
+    "go.testFlags": ["--cover", "-v"],
     "materialTheme.cache.workbench.settings": {
         "themeColours": "Default",
         "accent": "Cyan",
@@ -22,5 +25,7 @@
         "pickerGroup.foreground": "#00BCD4"
     },
     "workbench.iconTheme": "eq-material-theme-icons",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "extensions.ignoreRecommendations": false,
+    "typescript.check.npmIsInstalled": false
 }
