@@ -1,0 +1,32 @@
+---
+- name: check if the xbox controller app is already installed
+  command: pkgutil --pkgs
+  register: packages
+  changed_when: false
+  tags: xbox
+
+- name: download the xbox controller installer
+  get_url: url=https://github.com/360Controller/360Controller/releases/download/v0.16.5/360ControllerInstall_0.16.5.dmg dest=/tmp/360Controller.dmg
+  when: "'com.mice.pkg.Xbox360controller' not in packages['stdout_lines']"
+  tags: xbox
+
+- name: mount the xbox controller installer
+  command: hdiutil attach /tmp/360Controller.dmg -nobrowse -mountpoint /tmp/360Controller
+  when: "'com.mice.pkg.Xbox360controller' not in packages['stdout_lines']"
+  tags: xbox
+
+- name: install the xbox controller app
+  command: installer -store -pkg /tmp/360Controller/Install360Controller.pkg -target /
+  become: yes
+  when: "'com.mice.pkg.Xbox360controller' not in packages['stdout_lines']"
+  tags: xbox
+
+- name: unmount the xbox controller installer
+  command: hdiutil detach /tmp/360Controller/
+  when: "'com.mice.pkg.Xbox360controller' not in packages['stdout_lines']"
+  tags: xbox
+
+- name: delete the xbox controller installer
+  file: path=/tmp/360Controller.dmg state=absent
+  when: "'com.mice.pkg.Xbox360controller' not in packages['stdout_lines']"
+  tags: xbox

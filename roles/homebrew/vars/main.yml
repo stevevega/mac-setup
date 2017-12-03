@@ -22,7 +22,7 @@ homebrew_cask_apps:
   - iterm2
   - jet
   - keepassx
-  - openemu
+  - openemu-experimental
   - postman
   - robo-3t
   - sequel-pro

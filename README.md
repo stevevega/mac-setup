@@ -13,5 +13,5 @@ sudo pip install ansible
 Then run the following command:
 
 ```sh
-ansible-playbook -i inventories/localhost mac.yml -vvv
+ansible-playbook -i inventories/localhost -K mac.yml -vvv
 ```
