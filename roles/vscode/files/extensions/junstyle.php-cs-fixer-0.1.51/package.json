@@ -1,0 +1,101 @@
+{
+	"name": "php-cs-fixer",
+	"displayName": "php cs fixer",
+	"description": "PHP CS Fixer extension for VS Code, php formatter, php code beautify tool",
+	"version": "0.1.51",
+	"publisher": "junstyle",
+	"homepage": "https://github.com/junstyle/vscode-php-cs-fixer",
+	"icon": "logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/junstyle/vscode-php-cs-fixer.git"
+	},
+	"engines": {
+		"vscode": "^1.9.0"
+	},
+	"categories": [
+		"Formatters",
+		"Linters",
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:php"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "php-cs-fixer.fix",
+				"title": "php-cs-fixer: fix this file",
+				"when": "!inOutput && editorFocus && editorLangId == php"
+			}
+		],
+		"configuration": {
+			"title": "PHP CS Fixer Configuration options",
+			"type": "object",
+			"properties": {
+				"php-cs-fixer.executablePath": {
+					"type": "string",
+					"default": "php-cs-fixer",
+					"description": "Points to the php-cs-fixer exectuable, eg: win: php-cs-fixer.bat, other: php-cs-fixer; or points to php-cs-fixer.phar path, eg: /full/path/of/php-cs-fixer.phar"
+				},
+				"php-cs-fixer.executablePathWindows": {
+					"type": "string",
+					"description": "Points to the php-cs-fixer exectuable on Windows environments, eg: php-cs-fixer.bat. Useful if you are sharing settings among different environments."
+				},
+				"php-cs-fixer.rules": {
+					"type": "string",
+					"default": "@PSR2",
+					"description": "PHP CS Fixer level setting (@PSR1, @PSR2, @Symfony). @see: https://github.com/FriendsOfPHP/PHP-CS-Fixer"
+				},
+				"php-cs-fixer.config": {
+					"type": "string",
+					"default": ".php_cs",
+					"description": "config file(.php_cs) can place in workspace root folder or .vscode folder or any other folder(full path)"
+				},
+				"php-cs-fixer.onsave": {
+					"type": "boolean",
+					"default": false,
+					"description": "Execute PHP CS Fixer on save"
+				},
+				"php-cs-fixer.autoFixByBracket": {
+					"type": "boolean",
+					"default": true,
+					"description": "when press down the key } auto fix the code in the brackets {}"
+				},
+				"php-cs-fixer.autoFixBySemicolon": {
+					"type": "boolean",
+					"default": false,
+					"description": "when press down the key ; auto fix the code at the current line"
+				},
+				"php-cs-fixer.formatHtml": {
+					"type": "boolean",
+					"default": false,
+					"description": "whether formatting html at the same time"
+				},
+				"php-cs-fixer.documentFormattingProvider": {
+					"type": "boolean",
+					"default": true,
+					"description": "register php document formatting provider, right mouse-click context menu, show as 'Format Document', after changing this option you should restart your editor."
+				},
+				"php-cs-fixer.allowRisky": {
+					"type": "boolean",
+					"default": false,
+					"description": "Are risky fixers allowed"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"vscode": "^0.11.0"
+	},
+	"__metadata": {
+		"id": "b06b65b2-6ea9-4045-b166-54aa63205261",
+		"publisherId": "5ff10d01-354e-489d-b787-61450e806841",
+		"publisherDisplayName": "junstyle"
+	}
+}
